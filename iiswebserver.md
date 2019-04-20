@@ -1,6 +1,6 @@
 # IIS((Internet Information Services) WebServer Notes
 
-- IIS is a web server that runs on the Microsoft .NET platform on the Windows OS.
+$ IIS is a web server that runs on the Microsoft .NET platform on the Windows OS.
 
 ```
 A web server is a process for hosting web applications. The web server allows an application to process messages that arrive through specific TCP ports (by default). For example, the default port for HTTP traffic is 80, and the one for HTTPS is 443.

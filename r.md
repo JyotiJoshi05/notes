@@ -74,9 +74,11 @@ $ score: num 67 56 87 91
 [1] 2
 ```
 dim()
-- Returns the dimension of data frame
+- Returns the dimension of data frame.
+
 str()
 - Returns the structure of a data frame i.e. the list of variables stored in the data frame. 
+
 nrow() and ncol()
 - Return the number of rows and number of columns in a data set 
 ```

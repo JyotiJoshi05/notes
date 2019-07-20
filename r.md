@@ -77,8 +77,8 @@ dim()
 - Returns the dimension of data frame.
 
 str()
-- Returns the structure of a data frame i.e. the list of variables stored in the data frame.
- 
+- Returns the structure of a data frame i.e. the list of variables stored in the data frame. 
+
 nrow() and ncol()
 - Return the number of rows and number of columns in a data set 
 ```

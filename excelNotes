@@ -1,0 +1,71 @@
+Home	Alt+H
+Insert	Alt+N
+Page Layout	Alt+P
+Formulas	Alt+M
+Data	Alt+A
+View	Alt+W
+Review	Alt+R
+Hide Row	Ctrl+9
+Hide Column	Ctrl+0
+Current Time	Ctrl+Shift+:
+Current Date	Ctrl+;
+Copy cell formula from above	Ctrl+'
+Paste Special	Ctrl+Alt+V
+Strikethrough Format	Ctrl+5
+General Format	Ctrl+Shift+`
+Percent Format	Ctrl+Shift+%
+Add Row/Column	Ctrl+Shift+ +
+Delete Row/Column	Ctrl+ -
+
+- VLOOKUP
+This is a function from the lookup family that is used for retrieving and categorising data. For example, it can automate the process of entering an individual’s grade based on what mark he/she got. The grades and the marks of all individuals would have to be placed in a lookup table. The V stands for vertical and can only be used when your data has been organised vertically.
+
+Lookup Value:This is the value that you want to look up from the table. Excel will look for this value in the first column of the lookup table.
+
+Lookup Table/Table Array: This refers to the table that contains the lookup value and the value you would like returned. This can be specified by a table name, named range or cell references.
+
+Col_index: This is the column that contains the value you want Excel to return.
+
+Range Lookup: This argument is in square brackets and can be omitted when using range VLOOKUP. This argument must be set to FALSE when using an exact match VLOOKUP.
+
+Range VLOOKUP: This is a way of looking up a value from a table such that you don’t necessarily want Excel to find an exact match for the lookup value. Excel will use the largest value that is less than or equal to the lookup value. For range lookup, make sure that the data is sorted alphabetically or numerically. This is the default VLOOKUP in Excel.
+
+Exact Match VLOOKUP: This is a way of looking up a value with a unique identity, e.g. employee I.D. or account number of a particular employee. In this case, an exact match would be appropriate.
+
+- INDEX
+This function returns a value, or the reference to a value, from within a table or range.
+
+Array: This is the first argument of the Index function and it is usually a range of cells.
+
+Row_num: This is the number of the row that contains the value you want to return. This option becomes optional if your array only contains one row.
+
+Col_num: This is the number of the column that contains the value you want to return. This option becomes optional if your array only contains one column.
+
+Area_num: This is to be specified when more than 1 disjoint (separated) set of cell references is specified so that it becomes important to communicate to Excel which disjoint set is of interest to you.
+
+Note: To use the INDEX function to extract a row/column from a table specify the col_num/row_num as 0. Remember to highlight which cells you would like to place the array in and press Ctrl + Shift + Enter at the end of your formula.
+
+- CHOOSE
+This is a function in the lookup family of functions. This function retrieves a value from a list based on a numeric value you specify. It is good for small lists that won’t change often.
+
+Index_num: This is a numeric value which communicates to Excel which position in the list to retrieve the value from.
+
+Value 1, Value 2: This must be filled with the cell references of your list. Remember, use (say) B4,B5,B6 and not B4:B6.
+
+- MATCH
+This is a function in the family of lookup functions. This function works almost like VLOOKUP. It looks up a value in a row or column and returns a number for the position in which that value is contained. This function is usually used in combination with other lookup functions, e.g. INDEX.
+
+Lookup_value: This is the value to be looked up in the lookup array.
+
+Lookup_array: The range of cells being searched by Excel.
+
+Match type: This can be omitted if you desire to have the default option, which is the less than match type.
+
+0 is an exact match and it will return the position of the value that first matches the lookup value.
+
+1 is the less than match type. For this type, the data in the array must be arranged in ascending order. The position of the largest value that is less than or equal to the lookup value is returned.
+
+-1 is the greater than match type. For this type, the data in the array must be arranged in descending order. Excel will return the smallest value greater than or equal to the lookup value.
+
+#NA
+This error usually appears when the lookup function cannot find the lookup value in the lookup table.
